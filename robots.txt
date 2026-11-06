@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-USERNAME.github.io/bepal-website/sitemap.xml
+Sitemap: https://rahulricemill.github.io/BEPAL-Website/sitemap.xml
