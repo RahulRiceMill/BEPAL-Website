@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BEPAL - Business Nepal | Shop management app for Nepal</title>
+<meta name="description" content="BEPAL helps shops and small businesses in Nepal manage products, stock, billing and profit in one simple app. Every Business. One Platform.">
+<meta name="theme-color" content="#022964">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--navy:#022964;--green:#3da83a;--ink:#10203f;--mut:#51607a;--bg:#f4f7fc;--line:#dbe3f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 20px}
+header img{height:46px;width:auto;display:block}
+.r{display:flex;align-items:center;gap:8px}
+.lang{display:flex;border:1px solid var(--navy);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:#fff;color:var(--navy);font:inherit;font-size:.85rem;padding:4px 12px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--navy);color:#fff}
+.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:8px}
+.btn.g{background:var(--green)}.btn.o{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{background:linear-gradient(180deg,#eaf1ff,#fff);padding:48px 0}
+.hero .w{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.15;margin:0 0 12px;color:var(--navy)}
+.hero p{color:var(--mut);font-size:1.1rem;margin:0 0 22px}
+.hero .btns{display:flex;gap:10px;flex-wrap:wrap}
+.hero img{width:100%;max-width:300px;justify-self:center}
+section{padding:46px 0}section.alt{background:var(--bg)}
+h2{color:var(--navy);font-size:1.7rem;margin:0 0 6px}.sub{color:var(--mut);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;border-top:4px solid var(--green)}
+.card h3{margin:0 0 4px;color:var(--navy);font-size:1.1rem}.card p{margin:0;color:var(--mut)}
+.step{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.step b{flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center}
+.chips{display:flex;gap:10px;flex-wrap:wrap}.chips span{background:#fff;border:1px solid var(--navy);color:var(--navy);border-radius:999px;padding:6px 16px;font-weight:600}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;color:var(--navy)}details p{margin:8px 0 0;color:var(--mut)}
+footer{background:var(--navy);color:#fff;text-align:center;padding:40px 0}
+footer h2{color:#fff}footer p{margin:0 0 18px;opacity:.9}footer small{display:block;margin-top:24px;opacity:.7}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+@media(max-width:700px){.hero .w{grid-template-columns:1fr}.hero img{max-width:170px;order:-1}header img{height:38px}}
+</style>
+</head>
+<body>
+<header><div class="w">
+  <img src="logo.png" alt="BEPAL - Every Business. One Platform.">
+  <div class="r">
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="ne" aria-pressed="false">नेपाली</button></div>
+    <a class="btn app" href="#" data-t="open">Open app</a>
+  </div>
+</div></header>
+
+<div class="hero"><div class="w">
+  <div>
+    <h1 data-t="h1">Run your shop from your phone.</h1>
+    <p data-t="sub">BEPAL helps shops and small businesses in Nepal manage products, stock, billing and profit in one simple app.</p>
+    <div class="btns"><a class="btn g app" href="#" data-t="open2">Open BEPAL app</a><a class="btn o wa" href="#" target="_blank" rel="noopener" data-t="ask">Ask on WhatsApp</a></div>
+  </div>
+  <img src="icon-512.png" alt="BEPAL shopping bag logo">
+</div></div>
+
+<section id="features"><div class="w">
+  <h2 data-t="fh">Everything a small shop needs</h2><p class="sub" data-t="fs">Simple tools that work the way shops work.</p>
+  <div class="grid">
+    <div class="card"><h3 data-t="f1h">Products</h3><p data-t="f1">Add products with prices, units and categories.</p></div>
+    <div class="card"><h3 data-t="f2h">Inventory</h3><p data-t="f2">Track stock and see low-stock warnings.</p></div>
+    <div class="card"><h3 data-t="f3h">POS and billing</h3><p data-t="f3">Make bills fast and share receipts on WhatsApp.</p></div>
+    <div class="card"><h3 data-t="f4h">Reports and profit</h3><p data-t="f4">See sales, best sellers and profit by day or week.</p></div>
+    <div class="card"><h3 data-t="f5h">Many phones, one shop</h3><p data-t="f5">Sign in on another phone and see the same data.</p></div>
+    <div class="card"><h3 data-t="f6h">Safe access</h3><p data-t="f6">Password sign-in and a PIN lock on each phone.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="how"><div class="w">
+  <h2 data-t="hh">Start in three steps</h2><p class="sub" data-t="hs">No shop visit and no app store needed.</p>
+  <div class="step"><b>1</b><div><strong data-t="s1h">Create your account</strong><br><span data-t="s1">Sign up with your email and set up your business.</span></div></div>
+  <div class="step"><b>2</b><div><strong data-t="s2h">Add your products</strong><br><span data-t="s2">Enter prices and the stock you have today.</span></div></div>
+  <div class="step"><b>3</b><div><strong data-t="s3h">Start billing</strong><br><span data-t="s3">Sell, share receipts, and check your profit.</span></div></div>
+</div></section>
+
+<section id="for"><div class="w">
+  <h2 data-t="wh">Built for Nepali businesses</h2><p class="sub" data-t="ws">Made first for:</p>
+  <div class="chips"><span data-t="w1">Grocery stores</span><span data-t="w2">Retail shops</span><span data-t="w3">Wholesalers</span></div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w">
+  <h2 data-t="qh">Questions</h2><p class="sub"></p>
+  <details><summary data-t="q1">Do I need to install anything?</summary><p data-t="a1">No app store is needed. Open the link and tap Install to add BEPAL to your home screen.</p></details>
+  <details><summary data-t="q2">Is my data private?</summary><p data-t="a2">Each business signs in with its own email and password and can only see its own data.</p></details>
+  <details><summary data-t="q3">Can I fix a mistake in a bill?</summary><p data-t="a3">Yes. Cancel the sale and the items go back into stock.</p></details>
+  <details><summary data-t="q4">What if the internet drops?</summary><p data-t="a4">BEPAL is built to keep working and sync later. Please test it in your shop first.</p></details>
+</div></section>
+
+<footer><div class="w">
+  <h2 data-t="ch">Try BEPAL in your shop</h2><p data-t="cs">Questions or want help getting started? Message us.</p>
+  <a class="btn g app" href="#" data-t="open2">Open BEPAL app</a>
+  <a class="btn o wa" href="#" target="_blank" rel="noopener" style="margin-left:6px" data-t="ask">Ask on WhatsApp</a>
+  <small>BEPAL - Business Nepal | One platform. Every business. Built for Nepal.</small>
+</div></footer>
+
+<script>
+/* ===== EDIT THESE THREE LINES ===== */
+var APP_URL  = "https://rahulricemill.github.io/BEPAL/";
+var WHATSAPP = "9779866981082";   // 977 + number, digits only
+var LANG0    = "en";
+
+var T = {
+ en:{open:"Open app",open2:"Open BEPAL app",ask:"Ask on WhatsApp",h1:"Run your shop from your phone.",sub:"BEPAL helps shops and small businesses in Nepal manage products, stock, billing and profit in one simple app.",
+  fh:"Everything a small shop needs",fs:"Simple tools that work the way shops work.",f1h:"Products",f1:"Add products with prices, units and categories.",f2h:"Inventory",f2:"Track stock and see low-stock warnings.",
+  f3h:"POS and billing",f3:"Make bills fast and share receipts on WhatsApp.",f4h:"Reports and profit",f4:"See sales, best sellers and profit by day or week.",
+  f5h:"Many phones, one shop",f5:"Sign in on another phone and see the same data.",f6h:"Safe access",f6:"Password sign-in and a PIN lock on each phone.",
+  hh:"Start in three steps",hs:"No shop visit and no app store needed.",s1h:"Create your account",s1:"Sign up with your email and set up your business.",
+  s2h:"Add your products",s2:"Enter prices and the stock you have today.",s3h:"Start billing",s3:"Sell, share receipts, and check your profit.",
+  wh:"Built for Nepali businesses",ws:"Made first for:",w1:"Grocery stores",w2:"Retail shops",w3:"Wholesalers",qh:"Questions",
+  q1:"Do I need to install anything?",a1:"No app store is needed. Open the link and tap Install to add BEPAL to your home screen.",
+  q2:"Is my data private?",a2:"Each business signs in with its own email and password and can only see its own data.",
+  q3:"Can I fix a mistake in a bill?",a3:"Yes. Cancel the sale and the items go back into stock.",
+  q4:"What if the internet drops?",a4:"BEPAL is built to keep working and sync later. Please test it in your shop first.",
+  ch:"Try BEPAL in your shop",cs:"Questions or want help getting started? Message us.",wa:"Hello, I want to know more about BEPAL."},
+ ne:{open:"एप खोल्नुहोस्",open2:"BEPAL एप खोल्नुहोस्",ask:"WhatsApp मा सोध्नुहोस्",h1:"आफ्नो पसल मोबाइलबाटै चलाउनुहोस्।",sub:"BEPAL ले नेपालका पसल र साना व्यवसायलाई सामान, स्टक, बिल र नाफा एउटै सरल एपमा हेर्न मद्दत गर्छ।",
+  fh:"सानो पसललाई चाहिने सबै कुरा",fs:"पसलले काम गर्ने तरिकाअनुसारका सरल उपकरण।",f1h:"सामान",f1:"मूल्य, एकाइ र श्रेणीसहित सामान थप्नुहोस्।",f2h:"स्टक",f2:"स्टक हेर्नुहोस् र कम भएमा सूचना पाउनुहोस्।",
+  f3h:"बिलिङ (POS)",f3:"छिटो बिल बनाउनुहोस् र WhatsApp मा रसिद पठाउनुहोस्।",f4h:"रिपोर्ट र नाफा",f4:"दिन वा हप्ताअनुसार बिक्री, धेरै बिक्ने सामान र नाफा हेर्नुहोस्।",
+  f5h:"धेरै फोन, एउटै पसल",f5:"अर्को फोनमा साइन इन गरेर उही डाटा हेर्नुहोस्।",f6h:"सुरक्षित पहुँच",f6:"पासवर्डले साइन इन र हरेक फोनमा PIN लक।",
+  hh:"तीन चरणमा सुरु गर्नुहोस्",hs:"पसलमा आउनु पर्दैन, एप स्टोर पनि चाहिँदैन।",s1h:"खाता बनाउनुहोस्",s1:"इमेलले साइन अप गरी आफ्नो व्यवसाय सेटअप गर्नुहोस्।",
+  s2h:"सामान थप्नुहोस्",s2:"मूल्य र आजको स्टक राख्नुहोस्।",s3h:"बिलिङ सुरु गर्नुहोस्",s3:"बिक्री गर्नुहोस्, रसिद पठाउनुहोस् र नाफा हेर्नुहोस्।",
+  wh:"नेपाली व्यवसायका लागि बनाइएको",ws:"पहिले यिनका लागि:",w1:"किराना पसल",w2:"खुद्रा पसल",w3:"थोक व्यापारी",qh:"प्रश्नहरू",
+  q1:"के केही इन्स्टल गर्नुपर्छ?",a1:"एप स्टोर चाहिँदैन। लिङ्क खोलेर Install थिच्नुहोस्, होम स्क्रिनमा BEPAL आउँछ।",
+  q2:"के मेरो डाटा निजी रहन्छ?",a2:"हरेक व्यवसायले आफ्नै इमेल र पासवर्डले साइन इन गर्छ र आफ्नै डाटा मात्र देख्छ।",
+  q3:"बिलमा गल्ती भए सच्याउन सकिन्छ?",a3:"सकिन्छ। बिक्री रद्द गर्नुहोस्, सामान फेरि स्टकमा फर्कन्छ।",
+  q4:"इन्टरनेट गए के हुन्छ?",a4:"BEPAL इन्टरनेट गए पनि चल्ने र पछि सिङ्क हुने गरी बनाइएको हो। पहिले आफ्नो पसलमा परीक्षण गर्नुहोस्।",
+  ch:"आफ्नो पसलमा BEPAL प्रयोग गरेर हेर्नुहोस्",cs:"प्रश्न छ वा सुरु गर्न मद्दत चाहियो? सन्देश पठाउनुहोस्।",wa:"नमस्ते, मलाई BEPAL बारे थप जान्नु थियो।"}
+};
+function setLang(l){
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=T[l][e.dataset.t];});
+  document.querySelectorAll(".app").forEach(function(a){a.href=APP_URL;});
+  document.querySelectorAll(".wa").forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(T[l].wa);});
+  document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l);});
+  try{localStorage.setItem("lang",l);}catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.l);});});
+var saved=LANG0;try{saved=localStorage.getItem("lang")||LANG0;}catch(e){}
+setLang(saved);
+</script>
+</body>
+</html>
