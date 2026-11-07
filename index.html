@@ -120,7 +120,7 @@ var WHATSAPP = "9779866981082";   // 977 + number, digits only
 var LANG0    = "en";
 
 var T = {
- en:{open:"Open app",open2:"Open BEPAL app",ask:"Ask on WhatsApp",h1:"Run your shop from your phone.",sub:"BEPAL helps shops and small businesses in Nepal manage products, stock, billing and profit in one simple app.",
+ en:{open:"Download app",open2:"Download BEPAL app",ask:"Ask on WhatsApp",h1:"Run your shop from your phone.",sub:"BEPAL helps shops and small businesses in Nepal manage products, stock, billing and profit in one simple app.",
   fh:"Everything a small shop needs",fs:"Simple tools that work the way shops work.",f1h:"Products",f1:"Add products with prices, units and categories.",f2h:"Inventory",f2:"Track stock and see low-stock warnings.",
   f3h:"POS and billing",f3:"Make bills fast and share receipts on WhatsApp.",f4h:"Reports and profit",f4:"See sales, best sellers and profit by day or week.",
   f5h:"Many phones, one shop",f5:"Sign in on another phone and see the same data.",f6h:"Safe access",f6:"Password sign-in and a PIN lock on each phone.",
@@ -132,7 +132,7 @@ var T = {
   q3:"Can I fix a mistake in a bill?",a3:"Yes. Cancel the sale and the items go back into stock.",
   q4:"What if the internet drops?",a4:"BEPAL is built to keep working and sync later. Please test it in your shop first.",
   ch:"Try BEPAL in your shop",cs:"Questions or want help getting started? Message us.",wa:"Hello, I want to know more about BEPAL."},
- ne:{open:"एप खोल्नुहोस्",open2:"BEPAL एप खोल्नुहोस्",ask:"WhatsApp मा सोध्नुहोस्",h1:"आफ्नो पसल मोबाइलबाटै चलाउनुहोस्।",sub:"BEPAL ले नेपालका पसल र साना व्यवसायलाई सामान, स्टक, बिल र नाफा एउटै सरल एपमा हेर्न मद्दत गर्छ।",
+ ne:{open:"एप डाउनलोड गर्नुहोस्",open2:"BEPAL एप डाउनलोड गर्नुहोस्",ask:"WhatsApp मा सोध्नुहोस्",h1:"आफ्नो पसल मोबाइलबाटै चलाउनुहोस्।",sub:"BEPAL ले नेपालका पसल र साना व्यवसायलाई सामान, स्टक, बिल र नाफा एउटै सरल एपमा हेर्न मद्दत गर्छ।",
   fh:"सानो पसललाई चाहिने सबै कुरा",fs:"पसलले काम गर्ने तरिकाअनुसारका सरल उपकरण।",f1h:"सामान",f1:"मूल्य, एकाइ र श्रेणीसहित सामान थप्नुहोस्।",f2h:"स्टक",f2:"स्टक हेर्नुहोस् र कम भएमा सूचना पाउनुहोस्।",
   f3h:"बिलिङ (POS)",f3:"छिटो बिल बनाउनुहोस् र WhatsApp मा रसिद पठाउनुहोस्।",f4h:"रिपोर्ट र नाफा",f4:"दिन वा हप्ताअनुसार बिक्री, धेरै बिक्ने सामान र नाफा हेर्नुहोस्।",
   f5h:"धेरै फोन, एउटै पसल",f5:"अर्को फोनमा साइन इन गरेर उही डाटा हेर्नुहोस्।",f6h:"सुरक्षित पहुँच",f6:"पासवर्डले साइन इन र हरेक फोनमा PIN लक।",
@@ -148,7 +148,7 @@ var T = {
 function setLang(l){
   document.documentElement.lang=l;
   document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=T[l][e.dataset.t];});
-  document.querySelectorAll(".app").forEach(function(a){a.href=APP_URL;});
+  document.querySelectorAll(".app").forEach(function(a){a.href=APP_URL+"?install=1";});
   document.querySelectorAll(".wa").forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(T[l].wa);});
   document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l);});
   try{localStorage.setItem("lang",l);}catch(e){}
